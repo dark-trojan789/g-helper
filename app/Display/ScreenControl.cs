@@ -29,7 +29,7 @@ namespace GHelper.Display
             var refreshRate = ScreenNative.GetRefreshRate(laptopScreen);
             if (refreshRate < 0) return;
 
-            ScreenNative.SetRefreshRate(laptopScreen, refreshRate > 60 ? 60 : ScreenNative.GetMaxRefreshRate(laptopScreen));
+            ScreenNative.SetRefreshRate(laptopScreen, refreshRate > 60 ? 60.03 : ScreenNative.GetMaxRefreshRate(laptopScreen));
             InitScreen();
         }
 
